@@ -9,6 +9,7 @@ Se debera crear un archivo con variable de entorno (.env) en la raiz el proyecto
         DB_USER = <usuario_acceso_db>
         DB_PASS = <password_acceso_db>
         DB_CNN_STRING = <cadena de conexion>
+        JWT_KEY = <Palabra secreat que se desee sin espacios en blanco>
 
     ```
 
