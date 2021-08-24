@@ -15,7 +15,7 @@ const UsuarioSchema = Schema({
         type: String,
         required: true
     },
-    onlie: {
+    online: {
         type: Boolean,
         default: false
     }

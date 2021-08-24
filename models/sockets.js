@@ -13,6 +13,8 @@ class Sockets {
         //"socket en el argumento hace referencia al cliente dispositivo que se esta conectando"
         this.io.on('connection', (socket) => {
 
+            console.log('cliente conectado')
+
            //TODO: Validar el JWT
            //Si token no valido desconectar
 
@@ -29,6 +31,9 @@ class Sockets {
            //TODO: disconnect
            //MArcar en la bd que el usuario se desconecto
            //TODO: emitir todos los usuarios conetados
+           socket.on('disconnect', () =>{
+               console.log('cliente desconectado')
+           })
 
         });
     }
